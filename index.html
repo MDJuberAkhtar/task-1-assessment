@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./lib/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <script src="./lib/js/index.js"></script>
+    <title>HTML Assesment</title>
+  </head>
+  <body>
+  	<h1 class="heading"><strong>YOUR SHOPPING CART</strong></h1>
+  	<div class="flex-container">
+  		 <div id="same-size">
+  		 	<img src="./lib/img/moto.jpg" alt="Motorola" class="image-size">
+  		 </div>
+         <div class="number-flex" id="resize">
+         	<div><strong>MOTOROLA MOTO G5S</strong></div>
+         	<div><strong>SMARTPHONE, GREY</strong></div>
+         </div>
+         <div  id="same-size">
+         	<div class="numberCircle">1</div>
+          <br>
+         	<div class="price"><strong>AED <span class="dark">549</span></strong></div>
+         </div>  		  		
+  	</div>
+  	<div class="flex-container">
+  		 <div id="same-size">
+  		 	<img src="./lib/img/Nokia.jpg" alt="Nokia" class="image-size">
+  		 </div>
+         <div class="number-flex" id="resize">
+         	<div><strong>NOKIA 8 SMARTPHONE LTE,</strong></div>
+         	<div><strong>POLISHED COPPER</strong></div>
+         </div>
+         <div id="same-size">
+         	<div class="numberCircle">1</div>
+          <br>
+         	<div class="price"><strong>AED <span class="dark">1,1999</span></strong></div>
+         </div>
+         	  		
+  	</div>
+  	<div class="flex-container">
+  		 <div id="same-size">
+  		 	<img src="./lib/img/iphone.jpg" alt="iphone" class="image-size">
+  		 </div>
+         <div id="resize" class="number-change">
+         	<div id="decrease" onclick="decreaseValue()" class="value-button"><strong>-</strong></div>
+         	<input type="number" id="number" value="0" class="field" />
+         	<div id="increase" onclick="increaseValue()" class="value-button"><strong>+</strong></div>
+         </div>
+         <div id="same-size" class="cross" >
+         	<h6 class="cross">&#10006; <br> REMOVE</h6>
+     </div> 
+    </div>
+    <hr class="new">
+    <div class="flex-total">
+      <div>TOTAL</div>
+      <div>AED <strong class="dark">4927</strong></div>
+    </div>
+    <div class="flex-vat">
+      <div><strong>Price inclusive of VAT</strong></div>
+    </div>
+    <div class="flex-checkout">
+      <div><strong>PROCEED TO CHECKOUT</strong></div>
+    </div>
+  </body>
+</html>
